@@ -48,7 +48,7 @@ public class DemoApplication implements CommandLineRunner {
 	@Scheduled(fixedRate = 1000)
 	public void test() {
 		var pid = System.getProperty("PID");
-		System.out.println("My pid is: "+ pid + " - " + System.currentTimeMillis());
+		System.out.println("Kill me with 'kill -int "+ pid + "' - " + System.currentTimeMillis());
 	}
 
 	@Bean
